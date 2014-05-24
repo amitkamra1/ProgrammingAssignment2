@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix & cacheSolve are functions used in conduction to take the inverse of a matrix 
+##and cache it
 
-## Write a short comment describing this function
+
+## makeCacheMatrix takes a matrix as its argument and has subfunctions to store and cache the inverse of the matrix
+##the subfunctions are called in the cacheSolve function to return the 
+##cached inverse if it exists or to cache the inverse if it isn't already in the cache
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -16,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve takes makeCacheMatrix as its argument and either returns the cache of the matrix 
+## if it exists or calculates the inverse and calls on the setinverse subfunction to store the 
+## inverse in the cache. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
